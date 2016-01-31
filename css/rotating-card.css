@@ -16,6 +16,7 @@ body {
      -o-perspective: 800px;
         perspective: 800px;
         margin: 30px;
+        padding-right: 40px;
 }
 /* flip the pane when hovered */
 .card-container:not(.manual-flip):hover .card,
@@ -93,7 +94,7 @@ body {
 	border-radius: 4px;
 }
 .card .cover{
-    height: 105px;
+    height: 200px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
@@ -117,7 +118,7 @@ body {
 .card .content{
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
-    padding: 10px 20px 20px;
+    padding: 10px 20px 80px;
 }
 .card .content .main {
     min-height: 160px;
@@ -134,8 +135,9 @@ body {
 }
 .card h5{
     margin: 5px 0;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 20px;
+    font-size: 60%;
 }
 .card .profession{
     color: #999999;
@@ -145,9 +147,10 @@ body {
 .card .footer {
     border-top: 1px solid #EEEEEE;
     color: #999999;
-    margin: 30px 0 0;
+    margin: 0px 0 0;
     padding: 10px 0 0;
     text-align: center;
+
 }
 .card .footer .social-links{
     font-size: 18px;
@@ -160,7 +163,7 @@ body {
 }
 .card .header {
     padding: 15px 20px;
-    height: 90px;
+    height: 50px;
 }
 .card .motto{
     border-bottom: 1px solid #EEEEEE;
@@ -229,13 +232,16 @@ body {
 
 .btn-simple{
     opacity: .8;
-    color: #666666;
-    background-color: transparent;
+    color: white;
+    background-color: #005ce6;
+    float: right;
+    border-radius: 15px;
 }
 
 .btn-simple:hover,
 .btn-simple:focus{
-    background-color: transparent;
+    color: white;
+    background-color: #4d94ff;
     box-shadow: none;
     opacity: 1;
 }
