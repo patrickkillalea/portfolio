@@ -14,6 +14,7 @@
 	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 	<link rel='shortcut icon' href='images/portfolio.ico' />
 	<link href="css/ihover.min.css" rel="stylesheet">
+	<link href="css/rotating-card.css" rel="stylesheet">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.scrolly.min.js"></script>
@@ -100,109 +101,229 @@
 
 			<!-- Folio 2 -->
 			<section id="folio2" class="three">
-				<div class="container">
-					
-
-					<header>
-						<h2>Unum Web</h2>
-					</header>
-					<!-- From top and bottom-->
-					<div class="row">
-						<div class="3u 6u(mobile) 1u(mobile)">
-
-							<!-- normal -->
-							<div class="ih-item square colored effect6 from_top_and_bottom"><a href="#">
-								<div class="img"><img src="images/macbanner.jpg" alt="img"></div>
-								<div class="info">
-									<h3>Heading here</h3>
-									<p>Description goes here</p>
-								</div></a>
-							</div>
-							<!-- end normal -->
-
-						</div>
-						<div class="3u 6u(mobile) 1u(mobile)">
-
-							<!-- colored -->
-							<div class="ih-item square colored effect6 from_top_and_bottom"><a href="#">
-								<div class="img"><img src="images/macbanner.jpg" alt="img"></div>
-								<div class="info">
-									<h3>Heading here</h3>
-									<p>Description goes here</p>
-								</div></a>
-							</div>
-							<!-- end colored -->
-
-						</div>
-						<div class="3u 6u(mobile) 1u(mobile)">
-
-							<!-- normal -->
-							<div class="ih-item square colored effect6 from_top_and_bottom"><a href="#">
-								<div class="img"><img src="images/macbanner.jpg" alt="img"></div>
-								<div class="info">
-									<h3>Heading here</h3>
-									<p>Description goes here</p>
-								</div></a>
-							</div>
-							<!-- end normal -->
-
-						</div>
-						<div class="3u 6u(mobile) 1u(mobile)">
-
-							<!-- colored -->
-							<div class="ih-item square colored effect6 from_top_and_bottom"><a target="_blank" href="http://sniper.patrickkillalea.com">
-								<div class="img"><img src="images/macbanner.jpg" alt="img"></div>
-								<div class="info">
-									<h3>Heading here</h3>
-									<p>Description goes here</p>
-								</div></a>
-							</div>
-							<!-- end colored -->
-
-						</div>  
-					</div>
-					<!-- end From top and bottom-->
 
 
+<div class="row">
+	<div class="3u 6u(mobile) 1u(mobile)">
+
+               <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="images/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="images/rotating_card_profile.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Inna Corman</h3>
+                                <p class="profession">Product Manager</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Paris, France</h5>
+                                <h5><i class="fa fa-building-o fa-fw text-muted"></i> Creative Tim Inc. </h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> inna@creative-tim.com</h5>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i> Manual Flip
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Experince</h4>
+                                <p>Inna was working with our team since 2012.</p>
+                                <h4 class="text-center">Areas of Expertise</h4>
+                                <p>Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            <div class="social-links text-center">
+                                <a href="http://cretive-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
 
 
-					<div class="row">
+    </div>
 
-						<div class="3u 6u(mobile) 1u(mobile)">
-							<h2>Sniper</h2>
-							<a target="_blank" href="http://sniper.patrickkillalea.com" class="image featured">
-								<img src="images/macbanner.jpg" alt="" />
-							</a>
+	<div class="3u 6u(mobile) 1u(mobile)">
 
-<!-- 							<p>Sniper is a Unum tool which provides self service for workarounds defined by problem management throughout multiple Unum applications. These workarounds are implemented as temporary fixes to allow the business process to proceed with minimal interruption to service. Sniper temporary fixes are released when repetitive incidents of the same data fix are identified.</p>
-	<p>I was Scrum Master for this project leading a team of 6 developers to build the Web Application from scratch using technologies such as Angular.js, Bootstrap and SQL. I was also heavily involved in the look and feel of the application and created an information site and brochure which you can view.</p> -->
-	<a target="_blank" href="http://sniper.patrickkillalea.com" class="button scrolly">More Info</a>
-</div>
+               <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="images/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="images/rotating_card_profile.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Inna Corman</h3>
+                                <p class="profession">Product Manager</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Paris, France</h5>
+                                <h5><i class="fa fa-building-o fa-fw text-muted"></i> Creative Tim Inc. </h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> inna@creative-tim.com</h5>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i> Manual Flip
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Experince</h4>
+                                <p>Inna was working with our team since 2012.</p>
+                                <h4 class="text-center">Areas of Expertise</h4>
+                                <p>Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            <div class="social-links text-center">
+                                <a href="http://cretive-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
 
 
-<div class="3u 6u(mobile) 1u(mobile)">
-	<h2>Radar</h2>
-	<a target="_blank" href="http://radardescription.patrickkillalea.com" class="image featured">
-		<img src="images/macbanner.jpg" alt="" />
-	</a>
-	<a target="_blank" href="http://radardescription.patrickkillalea.com" class="button scrolly">More Info</a>
-</div>
-<div class="3u 6u(mobile) 1u(mobile)">
-	<h2>Mapper</h2>
-	<a target="_blank" href="http://mapper.patrickkillalea.com" class="image featured">
-		<img src="images/mapperbanner.jpg" alt="" />
-	</a>
-	<a target="_blank" href="http://mapper.patrickkillalea.com" class="button scrolly">More Info</a>
-</div>
-<div class="3u 6u(mobile) 1u(mobile)">
-	<h2>EDI OC</h2>
-	<a target="_blank" href="http://edioc.patrickkillalea.com" class="image featured">
-		<img src="images/EDIOnCall.jpg" alt="" />
-	</a>
-	<a target="_blank" href="http://edioc.patrickkillalea.com" class="button scrolly">More Info</a>
-</div>
-</div>
-</div>
+    </div>
+
+	<div class="3u 6u(mobile) 1u(mobile)">
+
+               <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="images/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="images/rotating_card_profile.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Inna Corman</h3>
+                                <p class="profession">Product Manager</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Paris, France</h5>
+                                <h5><i class="fa fa-building-o fa-fw text-muted"></i> Creative Tim Inc. </h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> inna@creative-tim.com</h5>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i> Manual Flip
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Experince</h4>
+                                <p>Inna was working with our team since 2012.</p>
+                                <h4 class="text-center">Areas of Expertise</h4>
+                                <p>Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            <div class="social-links text-center">
+                                <a href="http://cretive-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+
+
+    </div>
+
+	<div class="3u 6u(mobile) 1u(mobile)">
+
+               <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="images/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="images/rotating_card_profile.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Inna Corman</h3>
+                                <p class="profession">Product Manager</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Paris, France</h5>
+                                <h5><i class="fa fa-building-o fa-fw text-muted"></i> Creative Tim Inc. </h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> inna@creative-tim.com</h5>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i> Manual Flip
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Experince</h4>
+                                <p>Inna was working with our team since 2012.</p>
+                                <h4 class="text-center">Areas of Expertise</h4>
+                                <p>Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                <i class="fa fa-reply"></i> Back
+                            </button>
+                            <div class="social-links text-center">
+                                <a href="http://cretive-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="http://cretive-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+
+
+    </div>
+
 </section>
 
 
@@ -297,3 +418,31 @@
 		</body>
 
 		</html>
+
+		<script type="text/javascript">
+		$().ready(function(){
+			$('[rel="tooltip"]').tooltip();
+
+		});
+
+		function rotateCard(btn){
+			var $card = $(btn).closest('.card-container');
+			console.log($card);
+			if($card.hasClass('hover')){
+				$card.removeClass('hover');
+			} else {
+				$card.addClass('hover');
+			}
+		}
+		</script>
+
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-46172202-4', 'auto');
+		ga('send', 'pageview');
+
+		</script>
