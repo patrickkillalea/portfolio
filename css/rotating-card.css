@@ -16,7 +16,7 @@ body {
      -o-perspective: 800px;
         perspective: 800px;
         margin: 30px;
-        padding-right: 40px;
+        padding-right: 50px;
 }
 /* flip the pane when hovered */
 .card-container:not(.manual-flip):hover .card,
