@@ -1,0 +1,570 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Patrick Killalea</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <link rel='shortcut icon' href='images/portfolio.ico' />
+    <link href="css/rotating-card.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/jquery.scrollzer.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-wide.css" />
+    </noscript>
+    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <div id="header" class="skel-layers-fixed">
+
+        <div class="top">
+
+            <!-- Logo -->
+            <div id="logo">
+                <span class="image avatar48"><img src="images/patrickkillalea.jpg" alt="" /></span>
+                <h1 id="title">Patrick Killalea</h1>
+                <p>Software Developer</p>
+            </div>
+
+            <!-- Nav -->
+            <nav id="nav">
+
+                <ul>
+                    <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a>
+                    </li>
+                    <li><a href="#folio2" id="folio2-link" class="skel-layers-ignoreHref"><span class="icon fa-crosshairs">Personal Web Apps</span></a>
+                    </li>
+                    <li><a href="#folio3" id="folio3-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Unum Web Apps</span></a>
+                    </li>
+                    <li><a href="#folio4" id="folio4-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Unum SQL Projects</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="bottom">
+
+            <!-- Social Icons -->
+            <ul class="icons">
+                <li><a target="_blank" href="http://ie.linkedin.com/pub/patrick-killalea/1b/18b/ab7/" class="icon fa-2x fa-linkedin-square"><span class="label">LinkedIn</span></a>
+                </li>
+                <li><a target="_blank" href="https://github.com/patrickkillalea" class="icon fa-2x fa-github"><span class="label">GitHub</span></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Intro -->
+        <section id="top" class="one dark cover">
+            <div class="container">
+
+                <header>
+                    <h2 class="alt">Hi! I'm <strong>Patrick</strong>, a Software Developer with 5 years development experience at Unum, an American Insurance Company</h2>
+                    <p>Here you can view some of the projects I've been part of
+                        <br />both during my time at Unum and in my own free time.</p>
+                </header>
+
+                <footer>
+                    <a href="PatrickKillalea.pdf" class="button scrolly" download><div class="icon fa fa-file-pdf-o"></div> PDF CV</a>
+                    <a href="PatrickKillalea.docx" class="button scrolly" download><div class="icon fa fa-file-word-o"></div> DOC CV</a>
+                </footer>
+
+            </div>
+        </section>
+
+        <!-- Folio 2 -->
+        <section id="folio2" class="three">
+            
+            <header>
+                    <h2>Personal Web Apps</h2>
+            </header>
+            <p>The following is a couple of web based applications which I have worked on in my own time.</p>
+            <div class="row">
+
+                <!-- Start of Card -->
+                <div class="6u 6u(mobile) 1u(mobile)">
+                    <div class="card-container manual-flip" align="center">
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/roshan.jpg" />
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">The Rosh Pit</h3>
+                                        <h5>This is a mobile friendly responsive news website for the popular DOTA 2 PC game.</br>
+                                        I have tried to give it a mondern design while also allowing contributers to easily add new articles which are stored online in MongoDB. To view the website and code, click more info.</h5>
+                                    </div>
+                                    <div class="footer">
+                                        <button class="btn btn-simple" onclick="rotateCard(this)">
+                                            <i class="fa fa-mail-forward"></i> More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">The Rosh Pit</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4>The Rosh Pit was built on Bootstrap and the MEAN stack (Mongodb, Express, Angular, Node). I am using Heroku to host it online and my database is on MongoLab. All code is stored on GitHub. You can view both the website and source code in the links below.</h4>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Back
+                                    </button>
+                                    <div class="social-links text-center">
+                                        <a href="http://theroshpit.patrickkillalea.com/" target="_blank" rel="tooltip" title="Visit Website"><i class="fa fa-globe fa-2x"></i></a>
+                                        <a href="https://github.com/patrickkillalea/TheRoshPit" target="_blank" rel="tooltip" title="View Code"><i class="fa fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+
+                <!-- Start of Card -->
+                <div class="6u 6u(mobile) 1u(mobile)">
+                    <div class="card-container manual-flip" align="center">
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/LightThroughTrees.jpg" />
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Charity Comparer</h3>
+                                        <h5>This site was built with help from one of my friends who works for Concern. We were worried that the charity scandals of recent years were taking its toll on donations in Ireland and wanted to do something to counteract it.</br>
+                                        We decided to create a website which rates all Irish charities and compares them against each other by using fancy visualizations.</h5>
+                                    </div>
+                                    <div class="footer">
+                                        <button class="btn btn-simple" onclick="rotateCard(this)">
+                                            <i class="fa fa-mail-forward"></i> More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">Charity Comparer</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4>We take the information that charities publish in their annual reports and standardise it. This means you can see what your favourite charity is doing with your donation. And you can compare it with other charities.</br>
+                                            This was one of the first personal websites I created. You can see it and the code in the links below.
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Back
+                                    </button>
+                                    <div class="social-links text-center">
+                                        <a href="./wheredonationsgo/home.html" target="_blank" rel="tooltip" title="Visit Website"><i class="fa fa-globe fa-2x"></i></a>
+                                        <a href="https://github.com/patrickkillalea/wheredonationsgo" target="_blank" rel="tooltip" title="View Code"><i class="fa fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+                <!-- Start of Card -->
+                <div class="6u 6u(mobile) 1u(mobile)">
+                    <div class="card-container manual-flip" align="center">
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/electron.png" />
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Electron Game News</h3>
+                                        <h5>I am building this as a way to improve and modernize the user experience of the Unum homepage for internal staff.</br>
+                                        This website uses company specified styling to simulate the same look and feel of other company websites and is fully responsive unlike the current site.</h5>
+                                    </div>
+                                    <div class="footer">
+                                        <button class="btn btn-simple" onclick="rotateCard(this)">
+                                            <i class="fa fa-mail-forward"></i> More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">Electron Game News</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4>I have used bootstrap and javascript up to this point to get it looking the way it is to show how the UX would feel. When I have time I would like to build the style into an application framework and allow administrators add new pages or news articles. You can see my progress and the source code in the links below.</h4>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Back
+                                    </button>
+                                    <div class="social-links text-center">
+                                        <a href="./electrongamenews/index.html" target="_blank" rel="tooltip" title="Visit Website"><i class="fa fa-globe fa-2x"></i></a>
+                                        <a href="https://github.com/patrickkillalea/electrongamenews" target="_blank" rel="tooltip" title="View Code"><i class="fa fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+                <!-- Start of Card -->
+                <div class="6u 6u(mobile) 1u(mobile)">
+                    <div class="card-container manual-flip" align="center">
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/medium.png" />
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Medium Website</h3>
+                                        <h5>This is an application which I am building to aid in the management of football clubs. Club news, events, fixtures, squad and much much will be controlled through the app.</br>
+                                        Currently I am building out how the site will look visually, when I have more time I will add in a backend and more functionality.
+                                        </h5>
+                                    </div>
+                                    <div class="footer">
+                                        <button class="btn btn-simple" onclick="rotateCard(this)">
+                                            <i class="fa fa-mail-forward"></i> More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">Medium Website</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4>I designed the site with the aid of Moqups, PlaceIT and Photoshop with mobile responsiveness in mind.
+                                        Currently, I am heavily using Bootstrap and CSS to plan out visually how the site will look. My aim is to use MongoDB to store data and Angular and Node to run the web app which I will host on Heroku which makes use of AWS.</h4>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Back
+                                    </button>
+                                    <div class="social-links text-center">
+                                        <a href="http://medium.patrickkillalea.com/" target="_blank" rel="tooltip" title="Visit Website"><i class="fa fa-globe fa-2x"></i></a>
+                                        <a href="https://github.com/patrickkillalea/mean_blog" target="_blank" rel="tooltip" title="View Code"><i class="fa fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+        </div>
+                
+
+        </section>
+
+
+
+        <!-- Folio 3 -->
+        <section id="folio3" class="three">
+ <header>
+                    <h2>Unum Web Apps</h2>
+            </header>
+            <p>The following is a couple of web based applications which I have worked on in my time at Unum.</p>
+            <div class="row">
+
+                <!-- Start of Card -->
+                <div class="6u 6u(mobile) 1u(mobile)">
+                    <div class="card-container manual-flip" align="center">
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/snipermulti.jpg" />
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Sniper</h3>
+                                        <h5>Sniper provides self service for workarounds defined by problem management. These workarounds are implemented as temporary fixes to allow the business process to proceed with minimal interruption to service.</br>
+                                        Sniper temporary fixes are released when repetitive incident of the same data fix are identified.</h5>
+                                    </div>
+                                    <div class="footer">
+                                        <button class="btn btn-simple" onclick="rotateCard(this)">
+                                            <i class="fa fa-mail-forward"></i> More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">Sniper</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4>Sniper was built to be system agnostic so that adding a new system to our tool would be simple. We used Hot Towel as our framework which includes Bootstrap, Angular, Knockout, Breeze and SQL. Heavy use of SQL and Stored Procedures was used to allow the website to be as data driven as possible. This project has 8 developers based in US and Ireland.</h4>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Back
+                                    </button>
+                                    <div class="social-links text-center">
+                                        <a href="./sniper_description/home.html" target="_blank" rel="tooltip" title="Visit Website"><i class="fa fa-globe fa-2x"></i></a>
+                                        <a href="https://github.com/patrickkillalea/sniper_description" target="_blank" rel="tooltip" title="View Code"><i class="fa fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+
+                <!-- Start of Card -->
+                <div class="6u 6u(mobile) 1u(mobile)">
+                    <div class="card-container manual-flip" align="center">
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/mapperbanner.jpg" />
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Mapper Mobile</h3>
+                                        <h5>Mapper Self Serve is a Unum web application which allows business users who are discussing a clients data feed needs to create a sample file for the client which they can email to IT.</br>
+                                        Doing this saves a large amount of testing time and shows prospective clients that we have the ability to deliver exactly what they want.</h5>
+                                    </div>
+                                    <div class="footer">
+                                        <button class="btn btn-simple" onclick="rotateCard(this)">
+                                            <i class="fa fa-mail-forward"></i> More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">Mapper Mobile</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4>This was a responsive web based application which we created to aid Unum Business Analysts while collecting requirements from customers on their data file needs with a view to minimizing unexpected data formats. The application used JQuery, Ajax, JSON, SQL and IIS. It is currently used by 10+ analysts.</h4>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Back
+                                    </button>
+                                    <div class="social-links text-center">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+                <!-- Start of Card -->
+                <div class="6u 6u(mobile) 1u(mobile)">
+                    <div class="card-container manual-flip" align="center">
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/edioncall.jpg" />
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">EDI On Call</h3>
+                                        <h5>The majority of EDI files created are highly important and time critical, for example payroll files. Thus it was essential that any job failures were rectified quickly.</br>
+                                        This web based application allowed on call EDI support analysts diagnos job failures through their on call phone or tablet and perform resolution on the go.</h5>
+                                    </div>
+                                    <div class="footer">
+                                        <button class="btn btn-simple" onclick="rotateCard(this)">
+                                            <i class="fa fa-mail-forward"></i> More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">EDI On Call</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4>This was a responsive web based application using JQuery, Ajax, JSON, SQL and hosted through IIS. TFS was used for Source Control and for Project Management. </br>
+                                        We had 5 people working on the project over the course of about 3 months. It is currently used by 6 on call support analysts.</h4>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Back
+                                    </button>
+                                    <div class="social-links text-center">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+                <!-- Start of Card -->
+                <div class="6u 6u(mobile) 1u(mobile)">
+                    <div class="card-container manual-flip" align="center">
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/radar.jpg" />
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Tech Radar</h3>
+                                        <h5>Tech Radar is a visualization tool which allows the Vendor Products team to show what products they are bringing into the organization and at what stage they are at.</br>
+                                        Having a tool like this increases the teams visibility throughout the organization and allows individuals to see work being done.</h5>
+                                    </div>
+                                    <div class="footer">
+                                        <button class="btn btn-simple" onclick="rotateCard(this)">
+                                            <i class="fa fa-mail-forward"></i> More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">Tech Radar</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4>This project was built using bootstrap and angular and uses an XML file to store data. Each draggable circle receives a position on the radar which is saved each time it moves.</br>
+                                        Double clicking a circle will bring up a modal which allows you to edit the information in it.</h4>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Back
+                                    </button>
+                                    <div class="social-links text-center">
+                                        <a href="./RadarDescription/index.html" target="_blank" rel="tooltip" title="View Website"><i class="fa fa-globe fa-2x"></i></a>
+                                        <a href="https://github.com/patrickkillalea/Radar" target="_blank" rel="tooltip" title="View Code"><i class="fa fa-github fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+        </div>
+
+        </section>
+
+        <!-- Folio 4 -->
+        <section id="folio4" class="three">
+            <div class="container">
+
+                <header>
+                    <h2>Unum SQL Projects</h2>
+                </header>
+
+                <p>Using Mapper, Unums EDI/ETL tool, I was tasked with creating a variety of bespoke solutions for various Unum customers. Some examples can be seen below.</p>
+
+                <h3>BSwift</h3>
+                <p>BSwift are a Benefits Administration company which gathers data from our customers for use in Unums insurance products. My job was to set up our system to automatically take in data from BSwift in XML format and load the data to our Data Warehouse.</br>
+                Once data is in our warehouse, we would build automated jobs which used this data to create customised data files which customers would plug into their systems to use for various things including payroll deductions and eligibility feeds.</p>
+
+                <h3>TCS</h3>
+                <p>Telephonic claims submission is an area of Unum in which external customers will submit claims to the company via telephone.</br>
+                TCS workers enter the data into our systems for use by various parts of the organization. The EDI team built customized data files for our external customers which were sent on a monthly or weekly basis.</p>
+
+                <h3>CoPERA</h3>
+                <p>Colerado Pera is a huge client that was upgrading onto a new system, they weren't able to completly move off the old system so we needed to do some complex modeling to get it working.</br>
+                Unums Mapper application was the middle system in the process. We had to map in data from the benefit administration group to our system through multiple seperate jobs. After this, we needed to send the data in a specific format to the old system for the billing cycle to occur. This was done through a variety or jobs.</br>
+                Once the old system was updated and the billing cycle had completed, we had to move the data back into Mapper where we created a variety of data files and transmitted them to our customers.
+                </p>
+            </div>
+        </section>
+
+       
+        </div>
+
+
+        <!-- Footer -->
+        <div id="footer">
+
+            <!-- Copyright -->
+            <ul class="copyright">
+                <li>&copy; Patrick Killalea</li>
+            </ul>
+
+        </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $().ready(function() {
+        $('[rel="tooltip"]').tooltip();
+
+    });
+
+    function rotateCard(btn) {
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if ($card.hasClass('hover')) {
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+</script>
+
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-46172202-4', 'auto');
+    ga('send', 'pageview');
+</script>
